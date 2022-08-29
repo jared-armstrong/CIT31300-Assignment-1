@@ -1,0 +1,70 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background-color: whitesmoke;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container {
+    padding-top: 200px;
+    height: 100%;
+}
+
+.home-main {
+    width: 80%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%/1, max(300px, 100%/3)), 1fr));
+}
+
+/* Styling for portal boxes */
+.portal {
+    background-color: black;
+    width: 320px;
+    height: 90px;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 5px;
+    margin: 15px auto;
+    display: grid;
+    grid-template-columns: .25fr 1fr;
+    user-select: none;
+
+    transition: 300ms ease-in-out;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.portal:hover {
+    transition: 0ms;
+    transform: translateY(-5px);
+}
+
+
+.portal a {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.portal img {
+    height: 50px;
+}
+.portal a:link, .portal a:visited, .portal a:active, .portal a:hover {
+    color: whitesmoke;
+}
+
+.portal:hover {
+    opacity: .75;
+}

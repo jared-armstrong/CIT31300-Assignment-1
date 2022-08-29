@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Info</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="productFlip.css">
+    <script src="navigation.js"></script>
+</head>
+<body>
+
+    <!-- use nav element for the header -->
+    <nav>
+        <div class='navgrid'>
+            <a><img onclick='navToHome()' src='images/apple-logo.webp' alt=''></a>
+            <h1>Product Information</h1>
+        </div>
+        <!-- using previous hamburger menu code here -->
+        <div class='hamburger-menu'>
+            <input id='menu__toggle' type='checkbox' />
+            <label class='menu__btn' for='menu__toggle'>
+                <span></span>
+            </label>
+            <!-- make sure all navigation is on the drop down of the hamburger menu -->
+            <ul class='menu__box'>
+                <li onclick='navBackHome()'><a class='menu__item'>Home</a></li>
+                <li onclick='navToProduct()'><a class='menu__item'>Product Info</a></li>
+                <li onclick='navToForm()'><a class='menu__item'>Subscribe Here</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Create a container for the product, this will be flippable on click -->
+    <div class="maincontainer">
+        <!-- Create div for the card itself, will need a front and back side with elements -->
+        <div class="card" id="card">
+            <div class="front">
+                <h1>Apple Watch Series 7</h1>
+                <img src="images/apple-watch.webp" alt="Apple Watch" class="watchImage">
+            </div>
+            <div class="back">
+                <h2>Series 7 Features</h2>
+                <ul class="features">
+                    <li>45 mm display</li>
+                    <li>Breakthrough health innovations</li>
+                    <li>Most advanced display yet</li>
+                    <li>Faster Charging</li>
+                    <li>Most durable Apple Watch ever</li>
+                </ul>
+                <img src="images/apple-logo-black" alt="Apple Logo" class="prodLogo">
+            </div>
+        </div>
+    </div>
+
+    <script src="productInfo.js"></script>
+</body>
+</html>

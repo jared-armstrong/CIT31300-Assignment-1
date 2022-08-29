@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="navigation.js"></script>
+    <script src="form.js"></script>
+</head>
+<body>
+    <nav>
+        <div class='navgrid'>
+            <a><img onclick='navToHome()' src='images/apple-logo.webp' alt=''></a>
+            <h1>Subscribe Today!</h1>
+        </div>
+        <div class='hamburger-menu'>
+            <input id='menu__toggle' type='checkbox' />
+            <label class='menu__btn' for='menu__toggle'>
+                <span></span>
+            </label>
+            <ul class='menu__box'>
+                <li onclick='navBackHome()'><a class='menu__item'>Home</a></li>
+                <li onclick='navToProduct()'><a class='menu__item'>Product Info</a></li>
+                <li onclick='navToForm()'><a class='menu__item'>Subscribe Here</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="formContainer">
+        <form name="subscribe" method="post" onsubmit="return formValidation()">
+            <div>
+                <label for="firstName" class="large-label">First Name</label>
+                <input type="text" size="20" id="firstName" placeholder="First Name">
+            </div>
+            <div>
+                <label for="lastName" class="large-label">Last Name</label>
+                <input type="text" size="30" id="lastName" placeholder="Last Name">
+            </div>
+            <div>
+                <label for="address" class="large-label">Address</label>
+                <input type="text" size="100" id="address" placeholder="Home Address">
+            </div>
+            <div>
+                <label for="email" class="large-label">Email</label>
+                <input type="email" size="75" id="email" placeholder="Email Address">
+            </div>
+            <div>
+                <label for="phoneNumber" class="large-label">Phone Number</label>
+                <input type="text" size="15" id="phoneNumber" placeholder="Phone Number">
+            </div>
+            <div class="full-width">
+                <button type="submit">Subscribe</button>
+                <button type="reset">Clear Form</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

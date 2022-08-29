@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Home Page</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="navigation.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class='navgrid'>
+            <a><img onclick='navToHome()' src='images/apple-logo.webp' alt=''></a>
+            <h1>Apple Store Knockoff Site</h1>
+        </div>
+        <div class='hamburger-menu'>
+            <input id='menu__toggle' type='checkbox' />
+            <label class='menu__btn' for='menu__toggle'>
+                <span></span>
+            </label>
+            <ul class='menu__box'>
+                <li onclick='navToHome()'><a class='menu__item'>Home</a></li>
+                <li onclick='navToProduct()'><a class='menu__item'>Product Info</a></li>
+                <li onclick='navToForm()'><a class='menu__item'>Subscribe Here</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="home-main">
+            <div class="portal" onclick="navToProduct()">
+                <a><img src="images/information-icon.webp" alt=""></a>
+                <a><h2>Product Info</h2></a>
+            </div>
+            <div class="portal" onclick="navToForm()">
+                <a><img src="images/subscribe-icon.webp" alt=""></a>
+                <a><h2>Subscribe Today!</h2></a>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
